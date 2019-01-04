@@ -14,14 +14,6 @@ select {
   margin-bottom: 10px;
 }
 
-select {
-  font-size: calc(10px + 1vmin);
-  border: 0px;
-  outline: 0px;
-  margin-top: 3px;
-  margin-bottom: 10px;
-}
-
 fieldset {
   border: 0;
 }

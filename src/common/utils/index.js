@@ -16,15 +16,15 @@ export const sumToppingsPrices = (toppings) =>
 
 export const determineLimitMessage = (numberOfSelectedToppings, maxNumberOfToppings) => {
   if (maxNumberOfToppings === null) {
-    return 'Large pie?  You can add many toppings as you want.';
+    return 'Large pie?  You can add as many toppings as you want.';
   }
 
   const toppingsRemaining = maxNumberOfToppings - numberOfSelectedToppings;
   if (toppingsRemaining === 0) {
-    return 'That\'s it for toppings for this pizza.  Now add it to the cart below.';
+    return 'That\'s it for toppings for this pizza.  Add it to the cart below.';
   }
   if (toppingsRemaining === 1) {
-    return 'You have 1 more topping you can add.';
+    return 'This pizza will hold 1 more topping.';
   }
   return `You have ${toppingsRemaining} more toppings you can add.`;
 };
