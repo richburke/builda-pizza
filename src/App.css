@@ -1,32 +1,104 @@
 .App {
+  font-size: calc(10px + 1vmin);
+}
+
+h1 {
+  font-size: calc(30px + 2vmin);
+}
+
+select {
+  font-size: calc(10px + 1vmin);
+  border: 0px;
+  outline: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  font-size: calc(10px + 1vmin);
+  border: 0px;
+  outline: 0px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: 0;
+}
+
+input[type="submit"] {
+  font-size: calc(10px + 2vmin);
+}
+
+select,
+input[type="checkbox"],
+input[type="submit"],
+.remove-icon {
+  cursor: pointer;
+}
+
+select.pie-size option:first-of-type {
+  display: none;
+}
+
+.supplementary {
+  font-size: calc(8px + 1vmin);
+  color: gray;
+}
+
+.selection-container,
+.cart-container {
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid lightGray;
+  min-width: 500px;
+}
+
+.selection-prompt {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submit-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-items-label,
+.cart-label {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toppings-container,
+.order-item-container,
+.price-container {
+  margin: 10px 50px 0 20px;
+}
+
+.topping-item,
+.price-container,
+.order-item-descriptor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price-container {
+  border-top: 1px solid gray;
+  padding-top: 5px;
+}
+
+.remove-icon {
+  display: inline-block;
+  color: blue;
+  margin-right: 5px;
+}
+
+.cart-container .supplementary {
+  margin-left: 27px;
+}
+
+.total-price {
+  font-weight: bold;
 }
