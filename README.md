@@ -3,7 +3,7 @@
 ### Running the code
 ```
 yarn install
-yarn test
+yarn start
 ```
 
 ### Some things I would add soon if this were the real deal
